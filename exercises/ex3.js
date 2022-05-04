@@ -33,3 +33,37 @@ What goes into the three blank spaces? You can fill in the blanks with the name 
 
 Mr. Parkes did it in the dining room with the knife!
 */
+
+let weapon = "";
+const room = "dining room";
+const suspect = "Mr. Parkes";
+
+switch (room){
+    case "ballroom":
+        weapon = "poison";
+    break;
+    case "gallery":
+        weapon = "trophy";
+    break;
+    case "billiards room":
+        weapon = "pool stick";
+    break;
+    case "dining room":
+        weapon = "knife";
+    break;
+    default:
+        console.log("There's no weapon, There's no Murder");
+    break;
+}
+
+if (suspect === "Mr. Parkes" && room === "dining room"){
+    console.log(suspect + "did it in the" + room + "with the" + weapon + "!");
+}else if (suspect === "Ms. Van Cleve" && room === "gallery"){
+    console.log(suspect + "did it in the" + room + "with the" + weapon + "!");
+}else if (suspect === "Mrs. Sparr" && room === "billiards room"){
+    console.log(suspect + "did it in the" + room + "with the" + weapon + "!");
+}else if (suspect === "Mr. Kalehoff" && room === "ballroom"){
+    console.log(suspect + "did it in the" + room + "with the" + weapon + "!");
+}else{
+    console.log("Mystery isnt solved!");
+}

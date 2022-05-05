@@ -31,3 +31,16 @@ T-2 seconds
 T-1 seconds
 Solid rocket booster ignition and liftoff!
 */
+
+const task1 = "Orbiter transfers from ground to internal power";
+const task2 = "Ground launch sequencer is go for auto sequence start";
+const task3 = "Activate launch pad sound suppression system";
+const task4 = "Activate main engine hydrogen burnoff system";
+const task5 = "Main engine start";
+const task6 = "Solid rocket booster ignition and liftoff!";
+let count = 50;
+
+while (count >= 0){
+    
+    console.log("T minus " + count + " Seconds");
+}

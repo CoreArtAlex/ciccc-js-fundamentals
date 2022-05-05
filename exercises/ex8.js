@@ -27,6 +27,6 @@ while (x <= 100) {
         if(x%3 == 0){ 
             console.log("FizzBuzz"); 
         } 
-    }
+    }else { console.log(x); }
     x++;
 }
